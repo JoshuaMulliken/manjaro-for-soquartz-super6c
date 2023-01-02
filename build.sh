@@ -74,7 +74,7 @@ if [ -v BUILD_IMAGE ]; then
   cp /var/cache/manjaro-arm-tools/pkg/aarch64/linux-[0-9]*.pkg.tar.zst packages/
 
   sudo getarmprofiles -f
-  cp soquartz-super6c-profile /usr/share/manjaro-arm-tools/profiles/arm-profiles/devices/
+  sudo cp soquartz-super6c-profile /usr/share/manjaro-arm-tools/profiles/arm-profiles/devices/
 
   # Create the image
   sudo buildarmimg -d soquartz-super6c -e minimal -b stable -v $VERSION -i packages
